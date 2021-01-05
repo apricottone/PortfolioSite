@@ -7,6 +7,7 @@ html {
 body {
   background: url("../img/work-back.jpg") no-repeat fixed left bottom;
   background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
   color: #fff;
   text-align: center;
   font-size: 1.4rem;
