@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515 url('../img/body_img.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/* header */
+.header {
+  padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #ccc;
+  font-size: 1.6rem;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.buttons .button {
+  margin: 10px;
+}
+
+/* section1 about */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+
+.about-box {
+  width: 600px;
+  margin: 30px auto;
+  display: flex;
+}
+
+.about-box .about-icon {
+  flex: 1;
+}
+
+.about-box .about-icon .icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+ }
+
+ .about-box .about-list {
+  flex: 1;
+}
+
+.about-box .about-list ul {
+  text-align: justify;
+  line-height: 2.5;
+}
+
+.about-box .about-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.about-box .about-list .ballon-left {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  width: auto;
+  min-width: 150px;
+  height: 40px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid inherit;
+  z-index: 0;
+}
+
+/* section2 works */
+.works {
+  background-color: #383634;
+  padding: 80px 0;
+}
+
+.works-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+
+.work-box {
+  flex: 1;
+  border: 1px solid #fff;
+  margin: 20px;
+}
+ 
+.work-image {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.work-text {
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.work-text .button {
+  margin: 20px;
+  padding: 20px;
+}
+
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.button-ghost:hover {
+  opacity: 0.8;
+}
+
+/* section3 skills */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+
+.skill-box {
+  display: table-cell;
+}
+
+.skill-box img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.skill-box .php-logo {
+  height: 70px;
+}
+
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+
+.skill-text {
+  margin: 0 20px;
+  line-height: 2;
+}
+
+.skill-text span {
+  font-size: 2rem;
+  color: #FFA500;
+}
+
+/* section4 contact */
+.contact {
+  padding: 80px 0 150px;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.9) inset;
+}
+
+.contact-form ::placeholder {
+  color: rgb(255, 255, 255, 0.9);
+  opacity: 1;
+}
+
+.contact-form input {
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.contact-form textarea {
+  height: 150px;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* footer */
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  /* header */
+  .header {
+    padding-top: 60px;
+  }
+
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  .button:hover {
+    opacity: 1;
+  }
+
+  /* heading (section * 4) */
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 1.3rem;
+  }
+
+  /* section1 about */
+  .about-box {
+    width: 100%;
+    display: block;
+  }
+
+  .about-icon {
+    margin-bottom: 30px;
+  }
+
+  .about-box .about-list ul {
+    line-height: 1.8;
+  }
+
+  /* section2 works */
+  .works-wrapper,
+  .works-box {
+    display: block;
+  }
+
+  .work-box {
+    position: relative;
+  }
+
+  .work-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/res_work.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  .work-image {
+    display: none;
+  }
+
+  /* section3 skills */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+
+  .skill-box {
+    margin: 40px auto;
+  }
+
+  .skill-text {
+    margin: 0;
+  }
+
+  /* section4 contact */
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact {
+    padding-bottom: 80px;
+  }
+}

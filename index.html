@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <p class="site-title-sub">Welcome to</p>
+    <h1 class="site-title">Hiro's Site</h1>
+    <p class="site-description">This is portfolio site</p>
+    <div class="buttons">
+      <a class="button" href="#about">About me</a>
+      <a class="button" href="#contact">Send message</a>
+    </div>
+  </header>
+  <section class="about" id="about">
+    <h2 class="heading">ABOUT ME</h2>
+    <div class="about-box">
+      <div class="about-icon">
+        <img src="img/about.jpg" class="icon" alt="自己紹介用写真">
+      </div>
+      <div class="about-list">
+        <ul>
+          <li>氏名：Hiroto Mizunashi</li>
+          <li>学歴：北里大学 理学部 化学科</li>
+          <li>活動：大学では化学を専攻し、その傍らでプログラミングを独学中。また、大学公認の吹奏楽部にも所属。</li>
+        </ul>
+        <a href="https://github.com/MizHiro" target="_blank">
+          <img src="img/github_icon.png" alt="githubアイコン" class="git-link">
+          <div class="git-name">GitHub</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="works">
+    <h2 class="heading">WORKS</h2>
+    <div class="works-wrapper">
+      <div class="work-box">
+        <img class="work-image" src="img/work1.jpg" alt="制作事例1">
+        <p class="work-text">
+          『 出欠席管理アプリ 』<br>
+          所属している吹奏楽部にて運用中。<br>
+          団員の出欠席管理をより簡便に、がモットー<br>
+          利用技術：PHP / SQL<br>
+          <a href="#" target="_blank" class="button button-ghost">YouTube</a>
+          <a href="#" target="_blank" class="button button-ghost">Try it</a>
+        </p>
+      </div>
+      <div class="work-box">
+        <img class="work-image" src="img/work2.jpg" alt="制作事例2">
+        <p class="work-text">
+          『 チューナーアプリ 』<br>
+          こちらも所属している吹奏楽部にて運用中。<br>
+          目的の音を好きなタイミングでならせます。<br>
+          利用技術：JavaScript / Tone.js<br>
+          <a href="#" target="_blank" class="button button-ghost">YouTube</a>
+          <a href="https://mizhiro.github.io/KeyboardApp/" target="_blank" class="button button-ghost">Try it</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <h2 class="heading">MY SKILLS</h2>
+    <div class="skills-wrapper">
+      <div class="skill-box">
+        <img src="img/HTML5_Badge.svg" class="html-logo" alt="htmlロゴ">
+        <div class="skill-title">HTML5 / CSS3</div>
+        <p class="skill-text">
+          <span>★★★☆☆</span><br>
+          レスポンシブ対応のサイトの制作経験
+        </p>
+      </div>
+      <div class="skill-box">
+        <img src="img/javascript-1.svg" class="js-logo" alt="javascriptロゴ">
+        <div class="skill-title">JavaScript</div>
+        <p class="skill-text">
+          <span>★★★★☆</span><br>
+          Webアプリケーションの制作経験（個人）
+        </p>
+      </div>
+      <div class="skill-box">
+        <img src="img/php-med-trans-light.gif" class="php-logo" alt="phpロゴ">
+        <div class="skill-title">PHP / SQL</div>
+        <p class="skill-text">
+          <span>★★★★☆</span><br>
+          Webアプリケーションの制作経験（個人）<br>
+          CRUD機能の実装経験
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">CONTACT</h2>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScpGt5EmallCEvvEVPG8ncQXpaikdT6C5Wj3j075hQU660Cmw/formResponse" method="post" class="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
+      <input type="text" name="entry.2005620554" placeholder="NAME" required>
+      <input type="email" name="entry.1045781291" placeholder="E-MAIL" required>
+      <input type="text" name="entry.1065046570" placeholder="SUBJECT" required>
+      <textarea name="entry.839337160" cols="30" rows="5" placeholder="MESSAGE..."></textarea>
+      <input type="submit" value="SEND">
+      <script type="text/javascript">
+        let submitted = false;
+      </script>
+      <iframe name="hidden_iframe" style="display: none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+    </form>
+  </section>
+  <footer class="footer">
+    Copyright &copy; Hiro portfolio
+  </footer>
+</body>
+</html>
