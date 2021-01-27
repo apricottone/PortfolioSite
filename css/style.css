@@ -380,6 +380,10 @@ body {
     display: none;
   }
 
+  .works .works-wrapper .work-box .work-text a {
+    position: relative;
+  }
+
   /* section3 skills */
   .skills-wrapper,
   .skill-box {
