@@ -380,7 +380,7 @@ body {
     display: none;
   }
 
-  .works .works-wrapper .work-box .work-text a {
+  .works .works-wrapper .work-box .work-text {
     position: relative;
   }
 
