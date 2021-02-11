@@ -374,14 +374,11 @@ body {
     background: url("../img/res_work.jpg") no-repeat;
     background-size: cover;
     opacity: 0.2;
+    pointer-events: none;
   }
 
   .work-image {
     display: none;
-  }
-
-  .works .works-wrapper .work-box .work-text {
-    position: relative;
   }
 
   /* section3 skills */
